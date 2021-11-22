@@ -207,7 +207,6 @@ func main() {
 		"-show-kernel",
 		"-no-audio",
 		"-no-boot-anim",
-		"-netdelay", "none",
 		"-accel", "on",
 		"-wipe-data",
 		"-gpu", "host"}, startCustomFlags...)
