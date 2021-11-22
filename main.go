@@ -210,7 +210,7 @@ func main() {
 		"-netdelay", "none",
 		"-accel", "on",
 		"-wipe-data",
-		"-gpu", "swiftshader_indirect"}, startCustomFlags...)
+		"-gpu", "host"}, startCustomFlags...)
 
 	serial := startEmulator(emulatorPath, args, androidHome, runningDevices, 1)
 
