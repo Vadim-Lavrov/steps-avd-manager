@@ -206,6 +206,7 @@ func main() {
 		"-no-audio",
 		"-no-boot-anim",
 		"-netfast",
+		"-no-window",
 		"-wipe-data",
 		"-gpu", "swiftshader_indirect"}, startCustomFlags...)
 
