@@ -203,13 +203,11 @@ func main() {
 
 	args := append([]string{
 		"@" + cfg.ID,
-		"-verbose",
-		"-show-kernel",
 		"-no-audio",
 		"-no-boot-anim",
-		"-accel", "on",
+		"-netfast",
 		"-wipe-data",
-		"-gpu", "host"}, startCustomFlags...)
+		"-gpu", "swiftshader_indirect"}, startCustomFlags...)
 
 	serial := startEmulator(emulatorPath, args, androidHome, runningDevices, 1)
 
