@@ -205,8 +205,9 @@ func main() {
 		"@" + cfg.ID,
 		"-no-audio",
 		"-no-boot-anim",
-		"-netfast",
+		"-netspeed", "full",
 		"-accel", "on",
+		"-dns-server", "8.8.8.8,8.8.4.4",
 		"-wipe-data",
 		"-gpu", "swiftshader_indirect"}, startCustomFlags...)
 
